@@ -99,11 +99,13 @@ public:
 #pragma clang diagnostic pop
 #endif
 
+extern "C" void CDECL ReversePInvokeWrapper_InterpreterOptions_OnErrorReporter_m44CA88A85C68E4F33D9ECBBB4599A48565C2CC09(intptr_t ___userData0, char* ___format1, intptr_t ___args2);
 extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0(intptr_t ___arg0);
 
 
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
-const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[1] = 
+const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[2] = 
 {
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_InterpreterOptions_OnErrorReporter_m44CA88A85C68E4F33D9ECBBB4599A48565C2CC09),
 	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0),
 };

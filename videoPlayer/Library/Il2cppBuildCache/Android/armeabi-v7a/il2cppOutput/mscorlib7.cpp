@@ -14373,6 +14373,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConcurrentDictionary_2__ctor_m0A46F1D3CD
 // System.Void System.Collections.Generic.EqualityComparer`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualityComparer_1__ctor_mCC456E38AD44BE53056E7BE0B7D6A51C00190B92_gshared (EqualityComparer_1_t469B0BBE7B6765C576211BEF8F2803A5AD411A20 * __this, const RuntimeMethod* method);
 
+// System.IntPtr System.IntPtr::op_Explicit(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t IntPtr_op_Explicit_m9092E57CE669E7B9CCDCF5ADD6DFB758D6545FBF (int32_t ___value0, const RuntimeMethod* method);
+// System.IntPtr System.Runtime.InteropServices.Marshal::AllocHGlobal(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Marshal_AllocHGlobal_m6A2C9029FE6B9671891B8EEB9F051271A0EFF2F1 (intptr_t ___cb0, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.Marshal::copy_from_unmanaged(System.IntPtr,System.Int32,System.Array,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_from_unmanaged_mD094F62E0EAB94A195FE1DB4B84ACDF0B2240DC4 (intptr_t ___source0, int32_t ___startIndex1, RuntimeArray * ___destination2, int32_t ___length3, const RuntimeMethod* method);
 // System.Boolean System.IntPtr::op_Equality(System.IntPtr,System.IntPtr)
@@ -15366,6 +15370,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Number_TryStringToNumber_mA7B8C514818E24
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.IntPtr System.Runtime.InteropServices.Marshal::AllocHGlobal(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Marshal_AllocHGlobal_m6A2C9029FE6B9671891B8EEB9F051271A0EFF2F1 (intptr_t ___cb0, const RuntimeMethod* method)
+{
+	typedef intptr_t (*Marshal_AllocHGlobal_m6A2C9029FE6B9671891B8EEB9F051271A0EFF2F1_ftn) (intptr_t);
+	using namespace il2cpp::icalls;
+	return ((Marshal_AllocHGlobal_m6A2C9029FE6B9671891B8EEB9F051271A0EFF2F1_ftn)mscorlib::System::Runtime::InteropServices::Marshal::AllocHGlobal) (___cb0);
+}
+// System.IntPtr System.Runtime.InteropServices.Marshal::AllocHGlobal(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Marshal_AllocHGlobal_mED1B623D229DB8FAB58D187E4E73D3DA2E8AE6EC (int32_t ___cb0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_tEBAFAE20369FCB1B38C49C4E27A8D8C2C4B55058_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___cb0;
+		intptr_t L_1;
+		L_1 = IntPtr_op_Explicit_m9092E57CE669E7B9CCDCF5ADD6DFB758D6545FBF(L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tEBAFAE20369FCB1B38C49C4E27A8D8C2C4B55058_il2cpp_TypeInfo_var);
+		intptr_t L_2;
+		L_2 = Marshal_AllocHGlobal_m6A2C9029FE6B9671891B8EEB9F051271A0EFF2F1((intptr_t)L_1, /*hidden argument*/NULL);
+		return (intptr_t)L_2;
+	}
+}
 // System.Void System.Runtime.InteropServices.Marshal::copy_from_unmanaged(System.IntPtr,System.Int32,System.Array,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_from_unmanaged_mD094F62E0EAB94A195FE1DB4B84ACDF0B2240DC4 (intptr_t ___source0, int32_t ___startIndex1, RuntimeArray * ___destination2, int32_t ___length3, const RuntimeMethod* method)
 {
@@ -15453,6 +15483,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_GetLastWin32Error_m87DFFDB646
 	typedef int32_t (*Marshal_GetLastWin32Error_m87DFFDB64662B46C9CF913EC08E5CEFF3A6E314D_ftn) ();
 	using namespace il2cpp::icalls;
 	return ((Marshal_GetLastWin32Error_m87DFFDB64662B46C9CF913EC08E5CEFF3A6E314D_ftn)mscorlib::System::Runtime::InteropServices::Marshal::GetLastWin32Error) ();
+}
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringAnsi(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Marshal_PtrToStringAnsi_m75BAFD813E1B985A654946F05159CFA46E34F5AA (intptr_t ___ptr0, const RuntimeMethod* method)
+{
+	typedef String_t* (*Marshal_PtrToStringAnsi_m75BAFD813E1B985A654946F05159CFA46E34F5AA_ftn) (intptr_t);
+	using namespace il2cpp::icalls;
+	return ((Marshal_PtrToStringAnsi_m75BAFD813E1B985A654946F05159CFA46E34F5AA_ftn)mscorlib::System::Runtime::InteropServices::Marshal::PtrToStringAnsi_mscorlib_System_String_mscorlib_System_IntPtr) (___ptr0);
 }
 // System.Int32 System.Runtime.InteropServices.Marshal::ReleaseInternal(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_ReleaseInternal_m1F25DDB50BACEB9B7E746677BC477CA2B2734EF7 (intptr_t ___pUnk0, const RuntimeMethod* method)

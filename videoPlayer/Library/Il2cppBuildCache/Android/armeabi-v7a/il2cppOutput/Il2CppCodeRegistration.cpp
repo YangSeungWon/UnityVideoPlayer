@@ -25,6 +25,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Core_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Xml_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_TensorFlowLite_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_ARModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AnimationModule_CodeGenModule;
@@ -51,7 +52,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_Management_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[32] = 
+const Il2CppCodeGenModule* g_CodeGenModules[33] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Google_XR_Cardboard_CodeGenModule),
@@ -60,6 +61,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[32] =
 	(&g_System_Configuration_CodeGenModule),
 	(&g_System_Core_CodeGenModule),
 	(&g_System_Xml_CodeGenModule),
+	(&g_TensorFlowLite_CodeGenModule),
 	(&g_UnityEngine_ARModule_CodeGenModule),
 	(&g_UnityEngine_AndroidJNIModule_CodeGenModule),
 	(&g_UnityEngine_AnimationModule_CodeGenModule),
@@ -89,20 +91,20 @@ const Il2CppCodeGenModule* g_CodeGenModules[32] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	1,
+	2,
 	g_ReversePInvokeWrapperPointers,
-	4969,
+	5137,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	2034,
+	2057,
 	g_Il2CppInvokerPointers,
-	285,
+	291,
 	g_UnresolvedVirtualMethodPointers,
-	174,
+	179,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	32,
+	33,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

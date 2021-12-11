@@ -637,6 +637,8 @@ struct UnauthorizedAccessException_t737F79AE4901C68E935CD553A20978CEEF44F333;
 struct UnitySerializationHolder_tC37284C3EDCF2C91B5AB93206565CCCFD6ACC49B;
 // Microsoft.Win32.UnixRegistryApi
 struct UnixRegistryApi_tCC770C9223CF6108FB264A7BA5142227C2BC6D22;
+// System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute
+struct UnmanagedFunctionPointerAttribute_t3361C55E19F9905230FD9C1691B0FE0FD341B43F;
 // System.Reflection.Emit.UnmanagedMarshal
 struct UnmanagedMarshal_t12CF87C3315BAEC76D023A7D5C30FF8D0882F37F;
 // System.IO.UnmanagedMemoryStream
@@ -15263,6 +15265,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IOException__ctor_m208E01C02FF2C1D6C5AA6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RegistryKey_t1EF11DB6AC49AC065AF744487033109254215268 * KeyHandler_Ensure_mC80F917B65E8DF4A4A3BCC8CC42DE2F37D74CAAF (KeyHandler_tB9094857C733957C9D709512D2AD478828B119FF * __this, RegistryKey_t1EF11DB6AC49AC065AF744487033109254215268 * ___rkey0, String_t* ___extra1, bool ___writable2, bool ___is_volatile3, const RuntimeMethod* method);
 // System.Void System.NotImplementedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_mA2E9CE7F00CB335581A296D2596082D57E45BA83 (NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6 * __this, const RuntimeMethod* method);
+// System.Void System.Attribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1 (Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71 * __this, const RuntimeMethod* method);
 // System.Void System.IO.Stream::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Stream__ctor_m5EB0B4BCC014E7D1F18FE0E72B2D6D0C5C13D5C4 (Stream_t5DC87DD578C2C5298D98E7802E92DEABB66E2ECB * __this, const RuntimeMethod* method);
 // System.Void System.IO.UnmanagedMemoryStream::Initialize(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess,System.Boolean)
@@ -15301,8 +15305,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_ZeroMemory_mECA8DE895A000FA218AA8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_mD8D74E169D674343A07E706CE7D5E140676B927F (uint8_t* ___pDest0, int32_t ___destIndex1, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* ___src2, int32_t ___srcIndex3, int32_t ___len4, const RuntimeMethod* method);
 // System.Void System.EventArgs::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventArgs__ctor_m5ECB9A8ED0A9E2DBB1ED999BAC1CB44F4354E571 (EventArgs_tBCAACA538A5195B6D6C8DFCC3524A2A4A67FD8BA * __this, const RuntimeMethod* method);
-// System.Void System.Attribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1 (Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71 * __this, const RuntimeMethod* method);
 // System.Void System.Array::SetValue(System.Object,System.Int32[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_SetValue_m155453B293707C32AF61EB51F74A2381B91C2847 (RuntimeArray * __this, RuntimeObject * ___value0, Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* ___indices1, const RuntimeMethod* method);
 // System.Boolean System.Reflection.MemberInfo::op_Equality(System.Reflection.MemberInfo,System.Reflection.MemberInfo)
@@ -17706,6 +17708,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnixRegistryApi__ctor_m84D0FB6785E7D568B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute::.ctor(System.Runtime.InteropServices.CallingConvention)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedFunctionPointerAttribute__ctor_m4EE271163D421DF82BBCD7D91ED68D8EE26544F7 (UnmanagedFunctionPointerAttribute_t3361C55E19F9905230FD9C1691B0FE0FD341B43F * __this, int32_t ___callingConvention0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___callingConvention0;
+		__this->set_m_callingConvention_0(L_0);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
