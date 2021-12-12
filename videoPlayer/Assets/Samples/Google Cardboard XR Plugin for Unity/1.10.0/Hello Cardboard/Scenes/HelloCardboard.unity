@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 71247622}
   - component: {fileID: 71247621}
   m_Layer: 5
-  m_Name: Button (6)
-  m_TagString: Untagged
+  m_Name: 4Raise
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,8 +846,8 @@ GameObject:
   - component: {fileID: 619789227}
   - component: {fileID: 619789226}
   m_Layer: 5
-  m_Name: Button (3)
-  m_TagString: Untagged
+  m_Name: 2RightWink
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5b9e354f9ab8348976d1ba2353c568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelPath: model.tflite
+  modelPath: model_with_only_gyr_total.tflite
 --- !u!4 &1372632187
 Transform:
   m_ObjectHideFlags: 0
@@ -1343,8 +1343,8 @@ GameObject:
   - component: {fileID: 1473763614}
   - component: {fileID: 1473763613}
   m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
+  m_Name: 3BothWink
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1700,8 +1700,8 @@ GameObject:
   - component: {fileID: 1946932717}
   - component: {fileID: 1946932716}
   m_Layer: 5
-  m_Name: Button (5)
-  m_TagString: Untagged
+  m_Name: 5Lower
+  m_TagString: 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2000,8 +2000,8 @@ GameObject:
   - component: {fileID: 2098451896}
   - component: {fileID: 2098451895}
   m_Layer: 5
-  m_Name: Button (4)
-  m_TagString: Untagged
+  m_Name: 1LeftWink
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
