@@ -80,10 +80,13 @@ public class TouchHandler : MonoBehaviour
         var _s = new UDPSocket();
         _s.Client("127.0.0.1", 27000);
         _s.Send("test");*/
+        //messageReceived = true;
+        //recivedbutton = 3;
     }
 
     void pressButton(int index)
     {
+        Debug.Log($"index : {index}");
         var buttons = new List<UnityEngine.UI.Button>(Resources.FindObjectsOfTypeAll<UnityEngine.UI.Button>());
         var target = buttons.FirstOrDefault(x => x.name.Contains(index.ToString()));
         if (target == null) target = buttons.FirstOrDefault(x => !x.name.Contains("("));

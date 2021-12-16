@@ -22,11 +22,11 @@ public class Classifier : MonoBehaviour
 
     const int max_steps = 396;
 
-    private TensorFlowLite.Interpreter Interpreter;
+    private static TensorFlowLite.Interpreter Interpreter;
 
-    float[,] inputs = new float[396, 6];
+    static float[,] inputs = new float[396, 6];
 
-    float[] outputs = new float[6];
+    static float[] outputs = new float[6];
 
     // Start is called before the first frame update
     void Start()
@@ -101,6 +101,6 @@ public class Classifier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CollectData();
+        //CollectData();
     }
 }
